@@ -44,3 +44,5 @@ mongoose.connect(process.env.MONGO_URI, {
   console.log("Database connected!")
   app.listen(PORT, console.log(`listening at ${PORT}`));
 })
+
+module.exports = app;
