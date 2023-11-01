@@ -1,5 +1,5 @@
 const router=require('express').Router()
-const Todo_model=require('../models/todo')
+const Todo_model=require('../models/Todo')
 
 
 router.post('/add/todo',(req,res)=>{

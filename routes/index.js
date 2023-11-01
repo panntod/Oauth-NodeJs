@@ -1,5 +1,5 @@
 const router = require('express').Router()
-const Todo_model=require('../models/todo');
+const Todo_model=require('../models/Todo');
 const { ensureAuth, ensureGuest } = require('../middleware/auth')
 
 router.get('/', ensureGuest ,(req, res) => {
