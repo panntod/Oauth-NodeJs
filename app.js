@@ -2,12 +2,11 @@ const express = require("express");
 const mongoose = require("mongoose");
 const path = require("path");
 const dotenv = require("dotenv");
-const methodOverride = require("method-override");
 const passport = require("passport");
 const session = require("express-session");
 const MongoStore = require("connect-mongo")(session);
 
-var app = express();
+let app = express();
 const PORT = process.env.PORT || 3000;
 dotenv.config({ path: "./config/.env" });
 
