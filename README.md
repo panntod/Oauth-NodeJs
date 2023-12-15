@@ -3,6 +3,7 @@
 ## Deskripsi
 
 Dalam repo ini, mengimplementasikan OAuth atau outentikasi menggunakan layanan dari google (versi 2.0), dan setelah berhasil login maka akan menampilkan sebuah web todolist sederhana yang menyimpan data menggunakan MongoDB dan menggunakan materialize untuk membuat tampilan website lebih menarik
+
 ## Fitur
 
 - Sistem CRUD
@@ -12,15 +13,29 @@ Dalam repo ini, mengimplementasikan OAuth atau outentikasi menggunakan layanan d
 
 ## Cara Membuat Aplikasi
 
-### Langkah 1: 
+### Langkah 1:
 
 Pastikan sudah membuat OAuth Google Project atau buat menggunakan link ini:
 
 [Google Cloud Console](https://console.cloud.google.com/projectselector2/apis/credentials/consent?supportedpurview=project).
 
-### Langkah 2: 
+### Langkah 2:
 
-setelah itu masukan token api yang telah didapatkan ke dalam ```passport.js```
+setelah itu masukan token api yang telah didapatkan ke dalam `.env`
+
+```env
+ {
+      PORT=3000
+      MONGO_URI=<YourMongoUri>
+      GOOGLE_CLIENT_ID=<YourToken>.apps.googleusercontent.com
+      GOOGLE_CLIENT_SECRET=<YourToken>
+  },
+```
+
+### Langkah 3:
+
+dan digunakan untuk memproses `passport.js` untuk menyimpan data yang akan dikirim ke Google
+
 ```js
  {
         clientID: process.env.GOOGLE_CLIENT_ID,
@@ -29,9 +44,10 @@ setelah itu masukan token api yang telah didapatkan ke dalam ```passport.js```
   },
 ```
 
-### Langkah 3: 
+### Langkah 4:
 
 Jalan kan perintah ini untuk mendapatkan package:
+
 ```
 npm install
 ```
