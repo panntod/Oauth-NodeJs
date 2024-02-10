@@ -1,15 +1,15 @@
-# OAuth Google 2.0
+# OAuth Google 2.0 🌐
 
 ## Deskripsi
 
-Dalam repo ini, mengimplementasikan OAuth atau outentikasi menggunakan layanan dari google (versi 2.0), dan setelah berhasil login maka akan menampilkan sebuah web todolist sederhana yang menyimpan data menggunakan MongoDB dan menggunakan materialize untuk membuat tampilan website lebih menarik
+Dalam repo ini, mengimplementasikan OAuth atau autentikasi menggunakan layanan dari Google (versi 2.0). Setelah berhasil login, akan menampilkan sebuah web todolist sederhana yang menyimpan data menggunakan MongoDB dan menggunakan Materialize untuk membuat tampilan website lebih menarik.
 
 ## Fitur
 
-- Sistem CRUD
-- Akses MongoDB
-- Rest API
-- OAuth Google (v2.0)
+- Sistem CRUD ✨
+- Akses MongoDB 📊
+- Rest API 🌐
+- OAuth Google (v2.0) 🔐
 
 ## Cara Membuat Aplikasi
 
